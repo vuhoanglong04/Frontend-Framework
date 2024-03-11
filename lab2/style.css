@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  font-size: 16px!important;
+  background: url(https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/bg-register.jpg) no-repeat;
+  background-size: cover;
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+}
+.banner{
+  width: 100%;
+}
+h1{
+
+    color: rgb(46, 49 ,146);
+    font-size: 2rem;
+}
+.bg-white{
+    background-color: #fff;
+}
+form{
+    border-radius: 0.5rem;
+   padding: 2rem;
+}
+.title-section {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(46, 49 ,146);
+}
+.title-section:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #f26522;
+    margin-right: 10px;
+    border-radius: 2px;
+    
+}
+label{
+    margin-bottom: 5px;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(55 65 81 / var(--tw-text-opacity));
+    line-height: 20px;
+    font-size: 14px;
+}
+input[type="text"] , select{
+    height: 3rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+input:focus {
+    color: #212529;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: 0 !important;
+}
+
+  .form-select:focus {
+    border: 1px solid #ced4da;
+    outline: none;
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+  .checkbox{
+    font-weight: 300;
+    font-size: .875rem;
+  }
+  .personal_card label{
+    font-size: 16px;
+  }
+  img{
+    object-fit: cover;
+    object-position:top;
+  }
+  .submit_btn{
+    border: 1px solid;
+    border-radius: 0;
+    background: #111;
+    color: #fff;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 1.5rem 2rem;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 15.5rem;
+    text-transform: uppercase;
+    
+  }
+  .submit_btn:hover{
+    cursor: pointer;
+    background-color: rgb(46 49 146);
+    color: rgb(255 255 255);
+  }
+  span{
+    color: red;
+    font-weight: 300;
+    font-size: .875rem;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+
+  }
+  .hide{
+    display: none;
+  }
+  #diachikhac{
+    height: 1rem;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    padding: 11px 5px;
+    margin-bottom: 5px;
+  }
+  .newForm{
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .col-md-6{
+    margin-bottom: 30px;
+  }
+  @media (max-width: 597px) {
+    .checkbox_second{
+        margin-top: 30px;
+    }
+    select{
+      width: 100%;
+      padding: 0;
+      margin-bottom: 15px;
+    }
+    .col-sm{
+      padding-right: 0;
+    }
+    .major .col-12{
+      padding: 0;
+      padding-left: 13px;
+    }
+    .col-md-6{
+      /* padding-right: 0 !important; */
+    }
+   }
