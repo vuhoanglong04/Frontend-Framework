@@ -1,0 +1,41 @@
+<section class="heading">
+    <h1 class="mb-2">List Products</h1>
+</section>
+<div class="row">
+    <div class="col-12">
+        <article class="card mb-4">
+            <div class="card-body">
+                <h4 class="card-title mb-4"><a class="btn btn-success" href="#!/products/add">Add Product</a></h4>
+                <div class="table-responsive">
+                    <table id="example" class="table" cellspacing="0" width="100%">
+                        <thead >
+                            <tr>
+                                <th width="15%">ID</th>
+                                <th width="15%">Name</th>
+                                <th width="15%">Price</th>
+                                <th width="15%">Category</th>
+                                <th width="15%">Edit</th>
+                                <th width="15%">Delete</th>  
+                            </tr>
+                        </thead>
+                        <tbody ng-repeat="pr in products">
+                            <tr>
+                                <td>{{pr.id}}</td>
+                                <td>{{pr.name}}</td>
+                                <td>${{pr.price}}</td>
+                                <td>{{pr.category}}</td>
+                                <td><a class="btn btn-outline-primary btn-sm" href="" ng-click="onEdit(pr.id)">Edit</a></td>
+                                <td><a class="btn btn-outline-danger btn-sm" ng-click="onDelete(pr.id)">Delete</a></td>   
+                                       
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                </div>
+            
+            </div>
+        </article>
+    </div>
+
+</div>

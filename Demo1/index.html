@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+</head>
+
+<body ng-app="myapp">
+    <div ng-controller="myController">
+        <!-- <h1>{{sinhvien.welcome}}</h1>
+        <h2>{{sinhvien.masv}}</h2>
+        <h2>{{sinhvien.tensv}}</h2>
+        <h2 >{{sinhvien.date}}</h2>
+        <h2 ng-if="currentDate - sinhvien.date>18">Đủ tuổi đi </h2>
+        <span ng-switch="sinhvien.date">
+            <span ng-switch-when="2004">1</span>
+            <span ng-switch-when="2002">2</span>
+        </span> -->
+
+        <table border="1">
+                <thead>
+                    <th>STT</th>
+                    <th>Mã Sinh Viên</th>
+                    <th>Tên Sinh Viên</th>
+                    <th>Năm Sinh</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="sv in sinhvien">
+                        <td>{{$index + 1}}</td>
+                        <td>{{sv.masv}}</td>
+                        <td>{{sv.tensv}}</td>
+                        <td>{{sv.date}}</td>
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+    <script src="controller/add.js"></script>
+</body>
+
+
+</html>

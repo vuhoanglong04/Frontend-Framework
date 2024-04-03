@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.js"></script>
+</head>
+<body>
+     <div class="" ng-app="appRoute">
+            <header>This is header.</header>
+            <nav>
+                <ul>
+                    <li><a href="#!/home">Home</a></li>
+                    <li><a href="#!/add">Add</a></li>
+                    <li></li>
+                </ul>
+            </nav>
+            <main>
+
+                <div class="" ng-view></div>
+            </main>
+            <footer>
+                This is footer.
+            </footer>
+     </div>
+     <script src="route/route.js"></script>   
+</body>
+
+</html>

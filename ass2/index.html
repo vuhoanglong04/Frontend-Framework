@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a8ce98c4b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+   <div class="container-fuid">
+    <div id="wrapper">
+        <header class="top-bar flex-row align-items-center">
+            <div class="nav-brand">
+                <div class="hamburg-icon">
+                    <a href="javascript:void(0)" class="nav-link">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+                <div class="navbar-header">
+                    <h2 class="mb-0">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" alt="Admin">
+                         </a>
+                    </h2>
+                </div>
+         
+            </div>
+            <div class="navbar-container">
+                <div class="right-bar align-self-center">
+                    <div class="search-area">
+                        <input class="form-control no-border" type="text" placeholder="Search something special" />
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="clear-icon">
+                            <i class="mdi mdi-close md-24"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="d-md-none three-dots">
+                    <i class="mdi mdi-dots-vertical md-24"></i>
+                </button>
+
+                <div class="notifications">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" data-toggle="dropdown" class="nav-link" id="notificationList" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-regular fa-bell noti"></i>
+                            </a>
+                            <!-- Notification List -->
+                            <div class="dropdown-menu" aria-labelledby="notificationList">
+                                <div class="dropdown-heading">
+                                    <i class="fa-regular fa-bell"></i>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <figure>
+                                                <img src="assets/images/users-thumbs/user-2.jpg" class="img-sm" alt="user-icon">
+                                            </figure>
+                                            <div class="notification-text color-light-dark-grey">
+                                                <p>
+                                                    <span class="font-weight-500 text-dark">John Doe</span>
+                                                    <span class="text-muted"> liked your post</span>
+                                                </p>
+                                                <div class="text-dark small">
+                                                    5m ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <figure>
+                                                <img src="assets/images/users-thumbs/user-1.jpg" class="img-sm" alt="user-icon">
+                                            </figure>
+                                            <div class="notification-text color-light-dark-grey">
+                                                <p>
+                                                    <span class="font-weight-500 text-dark">Moo Doe</span>
+                                                    <span class="text-muted"> liked your cover image</span>
+                                                </p>
+                                                <div class="text-dark small">
+                                                    7m ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <figure>
+                                                <img src="assets/images/users-thumbs/user-3.jpg" class="img-sm" alt="user-icon">
+                                            </figure>
+                                            <div class="notification-text color-light-dark-grey">
+                                                <p>
+                                                    <span class="font-weight-500 text-dark">Lee Doe</span>
+                                                    <span class="text-muted"> commented on your video</span>
+                                                </p>
+                                                <div class="text-dark small">
+                                                    10m ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="see-all">
+                                        <a href="javascript:void(0)">
+                                            <span class="align-middle">See all notifications</span>
+                                            <i class="mdi mdi-chevron-right md-18"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Notification List End -->
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-toggle="dropdown" class="nav-link" id="emailList" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-regular fa-envelope noti"></i>
+                            </a>
+                            <!-- Notification List -->
+                            <div class="dropdown-menu" aria-labelledby="emailList">
+                                <div class="dropdown-heading">
+                                    <span>emails</span>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <figure>
+                                                <img src="assets/images/users-thumbs/user-4.jpg" class="img-sm" alt="user-icon">
+                                            </figure>
+                                            <div class="notification-text">
+                                                <h6>
+                                                    David Grey
+                                                    <small>1 Minute ago</small>
+                                                </h6>
+                                                <p>The meeting is cancelled</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <figure>
+                                                <img src="assets/images/users-thumbs/user-5.jpg" class="img-sm" alt="user-icon">
+                                            </figure>
+                                            <div class="notification-text">
+                                                <h6>
+                                                    Tim Cook
+                                                    <small>15 Minutes ago</small>
+                                                </h6>
+                                                <p>New product launch</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <figure>
+                                                <img src="assets/images/users-thumbs/user-6.jpg" class="img-sm" alt="user-icon">
+                                            </figure>
+                                            <div class="notification-text">
+                                                <h6>
+                                                    Johnson
+                                                    <small>18 Minutes ago</small>
+                                                </h6>
+                                                <p>Upcoming board meeting</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="see-all">
+                                        <a href="javascript:void(0)">
+                                            <span class="align-middle">See all notifications</span>
+                                            <i class="mdi mdi-chevron-right md-18"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Notification List End -->
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-toggle="dropdown" class="nav-link" id="userProfile" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/images/users-thumbs/user-1.jpg" width="24" alt="user" class="rounded-circle align-middle">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="userProfile">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)" class="p-0 border-bottom">
+                                            <div class="d-flex w-100 justify-content-center">
+                                                <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                                                    <i class="mdi mdi-bookmark-plus-outline mr-0 text-gray"></i>
+                                                </div>
+                                                <div class="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
+                                                    <i class="mdi mdi-account-outline mr-0 text-gray"></i>
+                                                </div>
+                                                <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                                                    <i class="mdi mdi-alarm-check mr-0 text-gray"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Manage Accounts
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Change Password
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           
+            </div>
+        </header>
+        <div class="main-wrapper" id="main-wrapper">
+            <aside class="main-header" style="height: 100vh;color:grey">
+                <nav class="navbar">
+                    <ul class="navbar-nav" style="color:grey">
+                        <li class="nav-heading">
+                        </li>
+                        <li class="nav-heading"> 
+                            Dashboard
+                        </li>
+                        <li class="nav-item Route">
+                            <a class="nav-link has-submenu waves-effect open" title="Dashboard"
+                                href="javascript:void(0)">
+                                <svg class="mr-2 mt-1" style="margin-bottom: 3px;" height="20" width="20"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>table</title><path d="M5,4H19A2,2 0 0,1 21,6V18A2,2 0 0,1 19,20H5A2,2 0 0,1 3,18V6A2,2 0 0,1 5,4M5,8V12H11V8H5M13,8V12H19V8H13M5,14V18H11V14H5M13,14V18H19V14H13Z" /></svg>
+                                <span class="menu-title">Category</span>
+                            </a>
+                            <div class="sub-menu level1">
+                                <ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                            href="#!/category/list">
+                                          
+                                            List Category</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item Route">
+                            <a class="nav-link has-submenu waves-effect open" title="Dashboard"
+                                href="javascript:void(0)">
+                                <svg class="mr-2" style="margin-bottom: 3px;" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>package-variant-closed</title><path d="M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L10.11,5.22L16,8.61L17.96,7.5L12,4.15M6.04,7.5L12,10.85L13.96,9.75L8.08,6.35L6.04,7.5M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V9.21L13,12.58V19.29L19,15.91Z" /></svg>
+                                <span class="menu-title">Product</span>
+                            </a>
+                            <div class="sub-menu level1">
+                                <ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link"
+                                        href="#!/products/list">List Product</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                      
+
+                    </ul>
+                </nav>
+            </aside>
+            <main>
+              <div class="m-3" ng-view>
+              </div>
+            </main>
+        
+        </div>
+        <footer>
+            <p>LONGVLHPH38689 <a href="https://store.indotalent.com" target="_blank">https://fpt.edu.com/</a></p>
+            <div class="d-inline-block">
+                <button type="button" class="btn-outline-fb btn-social-outline  mr-2">
+                    <i class="mdi mdi-facebook"></i>
+                </button>
+                <button type="button" class="btn-outline-tw btn-social-outline  mr-2">
+                    <i class="mdi mdi-twitter"></i>
+                </button>
+                <button type="button" class="btn-outline-dribble btn-social-outline  mr-2">
+                    <i class="mdi mdi-dribbble"></i>
+                </button>
+                <button type="button" class="btn-outline-ln btn-social-outline  mr-2">
+                    <i class="mdi mdi-linkedin"></i>
+                </button>
+                <button type="button" class="btn-outline-gplus btn-social-outline ">
+                    <i class="mdi mdi-google-plus"></i>
+                </button>
+            </div>
+        </footer>
+    </div>
+   </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="route/route.js"></script>
+     <!-- Category -->
+     <script src="controller/category/CategoryListController.js"></script>
+     <script src="controller/category/CategoryAddController.js"></script>
+     <script src="controller/category/CategoryEditController.js"></script>
+
+
+    <!-- Products -->
+    <script src="controller/products/ProductListController.js"></script>
+    <script src="controller/products/ProductAddController.js"></script>
+    <script src="controller/products/ProductEditController.js"></script>
+
+  
+</body>
+
+</html>

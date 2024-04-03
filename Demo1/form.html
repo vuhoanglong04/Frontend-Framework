@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body ng-app="myApp">
+    <div class="" ng-controller='myController'>
+        <form action="">
+                <!-- ng-model sử dụng để buộc data 2 -->
+                <!-- chiều từ $scope vào các điều khiển -->
+                <!-- của form như input , select, textarea... -->
+                <!-- <input type="text" ng-model="name">
+                <br>    
+                <h3>Đã nhập : {{name}}</h3>
+                <br> -->
+
+            <!-- <p>Gioi Tinh</p>
+            <label for="">Name</label>
+            <input type="radio" value="1" name="gioitinh" ng-model="gender">
+            <label for="">Nu</label>
+            <input type="radio" value="2" name="gioitinh" ng-model="gender">
+            <br>
+            -->
+            
+
+            <!-- checkbox -->
+            <!-- <label for="">List Course</label> <br>
+            <label for="">All</label>
+            <input type="checkbox" ng-model="course.All">
+            <label for="">C++</label>
+            <input type="checkbox" ng-model="course.C" value="1" ng-checkbox="course.All">
+            <label for="">Java</label>
+            <input type="checkbox" ng-model="course.JAVA" value="2" ng-checkbox="course.All">
+            <label for="">PHP</label>
+            <input type="checkbox" ng-model="course.PHP" value="3" ng-checkbox="course.All">
+            <br>
+              -->
+
+
+
+            
+            
+        </form>
+            <!-- select option  Cach 1 -->
+            <!-- <label for="">List People</label>
+            <select name="" ng-model="selected" id="" ng-options="item.name for item in list ">
+                <option value="{{item.id}}">{{item.name}}</option>
+            </select> -->
+
+            <!-- select option  Cach 2 -->
+            <label for="">List People</label>
+            <select name="" ng-model="selected" id="">
+                    <option ng-repeat="item in list"  value="{{item.id}}" >{{item.name}}</option>
+            </select>
+
+
+            <button ng-click="submit()">Submit</button>
+
+            
+    </div>
+
+</body>
+<script src="libs/angular.min.js"></script>
+<script src="controller/form.js"></script>
+</html>

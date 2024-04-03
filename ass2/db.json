@@ -1,0 +1,54 @@
+{
+  "category": [
+    {
+      "id": "1",
+      "name": "Fruit"
+    },
+    {
+      "id": "2",
+      "name": "Meat"
+    },
+    {
+      "id": "3",
+      "name": "Fish"
+    },
+    {
+      "id": "4",
+      "name": "câsdasda"
+    },
+    {
+      "id": "5",
+      "name": "12312fvv"
+    },
+    {
+      "name": "bjhgkjgh",
+      "id": "56cb"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "category": "1",
+      "price": 120
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "category": "2",
+      "price": 200
+    },
+    {
+      "name": "1d23123124",
+      "price": "123",
+      "category": "3",
+      "id": "47ba"
+    },
+    {
+      "name": "1323123",
+      "price": "123",
+      "category": "5",
+      "id": "f786"
+    }
+  ]
+}
